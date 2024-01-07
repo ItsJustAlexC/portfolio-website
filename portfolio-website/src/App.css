@@ -2,37 +2,59 @@
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.hero {
+  background-image: url('./images/background-mountain.png');
+  background-attachment: 'fixed';
+  background-position: 'center';
+  background-repeat: "no-repeat";
+  background-size: 'cover';
+  background-size: 100vw 100vh;
+  color: #ffffff;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.hero-content {
+  width: 100vw;
+  height: 100vh;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.fade-down {
+  animation-name: fade-down-animation;
+  animation-iteration-count: 1;
+  animation-timing-function: ease-in;
+  animation-duration: .75s;
+  animation-fill-mode: forwards;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+@keyframes fade-down-animation {
+  0% {
+    opacity: 0;
+    transform: translateY(-50px);
   }
-  to {
-    transform: rotate(360deg);
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.fade-up {
+  animation-name: fade-up-animation;
+  animation-iteration-count: 1;
+  animation-timing-function: ease-in;
+  animation-duration: .75s;
+  animation-fill-mode: forwards;
+}
+
+@keyframes fade-up-animation {
+  0% {
+    opacity: 0;
+    transform: translateY(50px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
   }
 }
