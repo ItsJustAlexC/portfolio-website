@@ -9,16 +9,19 @@
   background-repeat: "no-repeat";
   background-size: 'cover';
   background-size: 100vw 100vh;
-  color: #ffffff;
 }
 
 .hero-content {
-  width: 100vw;
   height: 100vh;
+  color: #ffffff;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
+}
+
+.about-content {
+  height: 100vh;
 }
 
 .fade-down {
@@ -57,4 +60,28 @@
     opacity: 1;
     transform: translateY(0);
   }
+}
+
+.hero-span {
+  margin-top: 1em;
+}
+.hover {
+  animation: hover-up-down 2s linear infinite;;
+}
+
+@keyframes hover-up-down {
+  0%{
+    transform: translateY(0);
+  }
+  50%{
+    transform: translateY(-20px);
+  }
+  100%{
+    transform: translateY(0);
+  }
+}
+
+.profile {
+  border-radius: 50%;
+  width: 10rem;
 }
