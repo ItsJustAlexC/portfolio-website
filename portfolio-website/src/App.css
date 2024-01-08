@@ -1,24 +1,39 @@
-.App {
-  text-align: center;
+.hero-bg-img {
+  background-image: url('./images/background-mountain-dark.png');
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover
 }
 
-.hero {
-  background-image: url('./images/background-mountain.png');
-  background-attachment: 'fixed';
-  background-position: 'center';
-  background-repeat: "no-repeat";
-  background-size: 'cover';
-  background-size: 100vw 100vh;
-  color: #ffffff;
+.hero-h1 {
+  font-family: 'Lato', sans-serif;
+  font-size: 5rem;
+  margin: 0% 0% 0% 0%;
+  font-weight: bold;
 }
 
 .hero-content {
-  width: 100vw;
+  height: 100vh;
+  color: #ffffff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.hero-arrow {
+  font-size: 1.5rem;
+  margin-top: 1.3rem;
+}
+
+.about-content {
   height: 100vh;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  opacity: 0;
 }
 
 .fade-down {
@@ -56,5 +71,140 @@
   100% {
     opacity: 1;
     transform: translateY(0);
+  }
+}
+
+.hero-span {
+  margin-top: 1em;
+}
+.hover {
+  animation: hover-up-down 2s linear infinite;;
+}
+
+@keyframes hover-up-down {
+  0%{
+    transform: translateY(0);
+  }
+  50%{
+    transform: translateY(-20px);
+  }
+  100%{
+    transform: translateY(0);
+  }
+}
+
+.profile {
+  border-radius: 50%;
+  width: 10rem;
+}
+
+.about-p {
+  font-family: 'Roboto Slab';
+  font-size: 1.0rem;
+  text-align: center;
+  padding: 0% 15% 0% 15%;
+}
+
+.about-h1 {
+  font-family: 'Lato', sans-serif;
+  font-size: 2.5rem;
+  font-weight: bolder;
+}
+
+.profile {
+  margin: 1.5rem 0% 1.5rem 0%;
+}
+
+.hero-span > a {
+  color: #ffffff;
+  text-decoration: none !important;
+}
+
+.footer {
+  height: 25vh;
+  background-color: #222222;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.footer-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: #ffffff;
+  margin-top: 1rem;
+}
+
+.footer-content > p {
+  margin-top: .5rem;
+}
+
+.git-logo, .linkedin-logo{
+  color: #ffffff;
+  background-color: #333333;
+  font-size: 2.2rem;
+  padding: .6rem;
+  text-decoration: none;
+  transition: .25s;
+}
+
+.git-logo {
+  margin-right: .5rem;
+}
+
+.git-logo:hover{
+  background-color: #4183C4;
+  transform: scale(1.1);
+}
+
+.linkedin-logo:hover{
+  background-color: #23527c;
+  transform: scale(1.1);
+}
+
+.navbar {
+  background-color: #000000;
+  z-index: 1;
+  color: #ffffff;
+}
+
+.navbar-content {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: end;
+}
+
+.navbar-links > a {
+  text-decoration: none;
+  color: #ffffff;
+  margin: 0rem 1rem 0rem 0rem;
+}
+@media (max-width: 320px) {
+  .hero-h1 {
+    font-size: 2.5rem;
+  }
+  .hero-h2 {
+    font-size: 1.1rem;
+  }
+}
+
+@media (max-width: 376px) {
+  .hero-h1 {
+    font-size: 2.5rem;
+  }
+  .hero-h2 {
+    font-size: 1.1rem;
+  }
+}
+
+@media (max-width: 426px) {
+  .hero-h1 {
+    font-size: 3.5rem;
+  }
+  .hero-h2 {
+    font-size: 1.1rem;
   }
 }
