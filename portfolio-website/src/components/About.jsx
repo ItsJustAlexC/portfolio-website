@@ -23,18 +23,18 @@ const About = () => {
     }, []);
 
     return (
-        <div className="about">
+        <div id='about' className="about container-fluid">
             <div className="about-content" ref={heroContentRef}>
-                <h1 className="about-h1">About Me</h1>
+                <h1 className="about-h1 ">About Me</h1>
                 <img className="profile" src={profileImage} alt="Alex" draggable="false"/>
                 <p className="about-p">
-                    Hi! My name's Alex and I love creating things. In college I started out as a music major, until one day I decided to take a course in Java. 
-                    Almost instantly I saw my love of creating music turn into a love of creating applications that other people could use. Fast-forward to today, I now specialize in Java and C# full-stack development.
-                    I have had the privilege of working with a <a href="https://www.genesis10.com">consultant company</a> and I currently work at a <a href="https://www.valleyqueen.com/">major cheese company</a>.
+                    Hi! My name's Alex and I love creating things. I started off as a music major in college, and ended up as a software developer by graduation. 
+                    Currently, I work at <a href='https://www.valleyqueen.com/'>Valley Queen</a>, as a C# Software Developer and AWS Cloud Engineer. 
+                    I have previously worked at <a href='https://www.genesis10.com'>Genesis Corp.</a> as a Software Developer Consultant working in Java full-stack development.
                 </p>
                 <br/>
                 <p className='about-p'>
-                    While I'm not coding, you can find me at the gym, watching youtube, or on my switch playing roguelikes.
+                    While I'm not coding, you can find me at the gym, watching youtube, or cooking some of the best tasting food!
                 </p>
             </div>
         </div>
