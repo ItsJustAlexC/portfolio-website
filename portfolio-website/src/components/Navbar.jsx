@@ -1,6 +1,31 @@
+import { useEffect, useRef, useState } from "react";
+
 const Navbar = () => {
+    const [navbarBackground, setNavbarBackground] = useState('');
+    
+    let isTransparent = true;
+
+    useEffect(() => {
+        const handleScroll = () => {
+            const show = window.scrollY > 50;
+
+            if (show && isTransparent) {
+                setNavbarBackground('black');
+                isTransparent = false;
+
+            } else if (!show && !isTransparent){
+                setNavbarBackground('transparent');
+                isTransparent = true;
+            }
+        };
+
+        document.addEventListener('scroll', handleScroll);
+
+    }, []);
+
+
     return(
-        <nav className="navbar position-fixed">
+        <nav id='navbar' className={`navbar position-fixed ${navbarBackground}`}>
             <div className="container-fluid">
                 <div className="navbar-content d-flex justify-content-between align-items-center">
                     <div className="navbar-title">
