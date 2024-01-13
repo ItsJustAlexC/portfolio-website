@@ -2,7 +2,7 @@ import { useEffect, useRef, useState } from "react";
 
 const Navbar = () => {
     const [navbarBackground, setNavbarBackground] = useState('');
-    
+
     let isTransparent = true;
 
     useEffect(() => {
@@ -29,7 +29,7 @@ const Navbar = () => {
             <div className="container-fluid">
                 <div className="navbar-content d-flex justify-content-between align-items-center">
                     <div className="navbar-title">
-                        <p className="navbar-brand text-white my-0 mx-5">ALEX CAMPBELL</p>
+                        <p className="navbar-brand text-white my-0 mx-5">MY PORTFOLIO</p>
                     </div>
                     <div className="navbar-links">
                         <ul className="nav">

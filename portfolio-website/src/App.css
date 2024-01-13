@@ -14,7 +14,6 @@
 }
 
 .hero-content {
-  height: 100vh;
   color: #ffffff;
   display: flex;
   flex-direction: column;
@@ -28,7 +27,6 @@
 }
 
 .about-content {
-  height: 100vh;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -118,7 +116,6 @@
 }
 
 .footer {
-  height: 25vh;
   background-color: #222222;
   display: flex;
   align-items: center;
@@ -197,7 +194,6 @@
 }
 
 .contact-content {
-  height: 75vh;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -207,6 +203,62 @@
 .contact-img {
   font-size: 3rem;
 }
+
+.contact-anchor {
+  border: #222222;
+  border-style: solid;
+  padding: .7rem;
+  font-size: 1.2rem;
+}
+
+.experience {
+  background-color: #f0f0f0;
+}
+
+.experience-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.resume-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.resume-anchor {
+  margin: 1rem 0rem 0rem 0rem;
+  border: #ffffff;
+  border-style: solid;
+  padding: .7rem;
+  font-size: 1.2rem;
+}
+
+.resume-h1 {
+  font-family: 'Lato', sans-serif;
+  font-size: 2.5rem;
+  margin: 0% 0% 0% 0%;
+  font-weight: bold;
+}
+
+.resume-bg-img {
+  background-image: url('./images/background-desk-dark-blur.png');
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover
+}
+
+.projects-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
 @keyframes navbarBackgroundToBlack{
   0%{
     background-color: transparent;
@@ -216,8 +268,6 @@
     padding: 0;
   }
 }
-
-
 
 @media (max-width: 320px) {
   .hero-h1 {

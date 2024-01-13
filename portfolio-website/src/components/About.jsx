@@ -5,6 +5,7 @@ import profileImage from '../images/profile.png';
 const About = () => {
     const heroContentRef = useRef();
     const [hasEntered, setHasEntered] = useState(false);
+    const viewportHeight = window.innerHeight;
 
     useEffect(() => {
         const observer = new IntersectionObserver(entries => {
@@ -24,7 +25,7 @@ const About = () => {
 
     return (
         <div id='about' className="about container-fluid">
-            <div className="about-content" ref={heroContentRef}>
+            <div className="about-content" style={{height: viewportHeight}} ref={heroContentRef}>
                 <h1 className="about-h1 ">About Me</h1>
                 <img className="profile" src={profileImage} alt="Alex" draggable="false"/>
                 <p className="about-p">
