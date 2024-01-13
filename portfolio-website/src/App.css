@@ -192,6 +192,21 @@
   animation-fill-mode: forwards;
 }
 
+.contact {
+  background-color: #f0f0f0;
+}
+
+.contact-content {
+  height: 75vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.contact-img {
+  font-size: 3rem;
+}
 @keyframes navbarBackgroundToBlack{
   0%{
     background-color: transparent;
