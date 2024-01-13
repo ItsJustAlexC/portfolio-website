@@ -1,4 +1,5 @@
 const Hero = () => {
+    const viewportHeight = window.innerHeight;
 
     const handleAnchorClick = (event) => {
         event.preventDefault();
@@ -16,7 +17,7 @@ const Hero = () => {
 
     return (
         <div className="hero hero-bg-img container-fluid">
-            <div className="hero-content">
+            <div className="hero-content" style={{height: viewportHeight}}>
                 <h1 className="hero-h1 fade-down">Hi! I'm Alex</h1>
                 <h2 className="hero-h2 fade-up">Full-Stack Developer </h2>
                 <span className="hero-span hover">
