@@ -3,6 +3,7 @@ import Hero from './components/Hero';
 import About from './components/About';
 import Footer from './components/Footer';
 import Navbar from './components/Navbar';
+import Contact from './components/Contact';
 
 function App() {
   return (
@@ -10,6 +11,7 @@ function App() {
       <Navbar/>
       <Hero/>
       <About/>
+      <Contact/>
       <Footer/>
     </div>
   );
