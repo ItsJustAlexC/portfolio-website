@@ -19,7 +19,6 @@ const About = () => {
 
         observer.observe(heroContentRef.current);
 
-        // Clean up on unmount
         return () => observer.disconnect();
     }, []);
 

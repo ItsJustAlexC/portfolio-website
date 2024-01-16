@@ -1,6 +1,7 @@
 const Hero = () => {
     const viewportHeight = window.innerHeight;
 
+    //prevents the anchor link from adding a reference to the URL when clicked
     const handleAnchorClick = (event) => {
         event.preventDefault();
 
