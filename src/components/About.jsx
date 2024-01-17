@@ -29,8 +29,8 @@ const About = () => {
                 <img className="profile" src={profileImage} alt="Alex" draggable="false"/>
                 <p className="about-p">
                     Hi! My name's Alex and I love creating things. I started off as a music major in college, and ended up as a software developer by graduation. 
-                    Currently, I work at <a href='https://www.valleyqueen.com/'>Valley Queen</a>, as a C# Software Developer and AWS Cloud Engineer. 
-                    I have previously worked at <a href='https://www.genesis10.com'>Genesis Corp.</a> as a Software Developer Consultant working in Java full-stack development.
+                    Currently, I work at <a className='text-decoration-none' href='https://www.valleyqueen.com/'>Valley Queen</a>, as a C# Software Developer and AWS Cloud Engineer. 
+                    I have previously worked at <a className='text-decoration-none' href='https://www.genesis10.com'>Genesis Corp.</a> as a Software Developer Consultant working in Java full-stack development.
                 </p>
                 <br/>
                 <p className='about-p'>
