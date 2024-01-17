@@ -163,6 +163,10 @@
   width: 100%;
 }
 
+.nav-link:hover {
+  opacity: .8;
+}
+
 .transparent {
   animation: navbarBackgroundToTransparent;
   animation-iteration-count: 1;
@@ -211,6 +215,18 @@
   font-size: 1.2rem;
 }
 
+.contact-anchor:hover{
+  animation-name: anchorAnimation;
+  animation-duration: .33s;
+  animation-fill-mode: forwards;
+}
+
+.contact-anchor:not(:hover){
+  animation-name: reverseAnchorAnimation;
+  animation-duration: .33s;
+  animation-fill-mode: forwards;
+}
+
 .experience {
   background-color: #f0f0f0;
 }
@@ -235,6 +251,41 @@
   border-style: solid;
   padding: .7rem;
   font-size: 1.2rem;
+}
+
+.resume-anchor:hover {
+  animation-name: anchorAnimation;
+  animation-duration: .33s;
+  animation-fill-mode: forwards;
+}
+
+.resume-anchor:not(:hover) {
+  animation-name: reverseAnchorAnimation;
+  animation-duration: .33s;
+  animation-fill-mode: forwards;
+}
+
+@keyframes anchorAnimation {
+  0% {
+    padding: .7rem;
+  }
+  100% {
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+    background-color: rgba(255,255,255, 0.2);
+  }
+}
+
+@keyframes reverseAnchorAnimation {
+  0% {
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+    background-color: rgba(255,255,255, 0.2);
+  }
+  100% {
+    padding: .7rem;
+    background-color: initial;
+  }
 }
 
 .resume-h1 {

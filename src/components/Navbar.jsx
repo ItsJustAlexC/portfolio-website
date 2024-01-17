@@ -40,20 +40,18 @@ const Navbar = () => {
     }
 
     return(
-        <nav id='navbar' className={`navbar position-fixed ${navbarBackground}`}>
-            <div className="container-fluid">
-                <div className="navbar-content d-flex justify-content-between align-items-center">
-                    <div className="navbar-title">
-                        <p className="navbar-brand text-white my-0 mx-5">MY PORTFOLIO</p>
-                    </div>
-                    <div className="navbar-links">
-                        <ul className="nav">
-                            <li className="nav-item"><a className="nav-link text-white" href='#about' onClick={handleAnchorClick}>ABOUT</a></li>
-                            <li className="nav-item"><a className="nav-link text-white" href='#experience' onClick={handleAnchorClick}>EXPERIENCE</a></li>
-                            <li className="nav-item"><a className="nav-link text-white" href='#projects' onClick={handleAnchorClick}>PROJECTS</a></li>
-                            <li className="nav-item"><a className="nav-link text-white" href='#contact' onClick={handleAnchorClick}>CONTACT</a></li>
-                        </ul>
-                    </div>
+        <nav id='navbar' className={`navbar container-fluid position-fixed ${navbarBackground}`}>
+            <div className="navbar-content d-flex justify-content-between align-items-center p-1">
+                <div className="navbar-title">
+                    <p className="navbar-brand text-white my-0 mx-5">MY PORTFOLIO</p>
+                </div>
+                <div className="navbar-links">
+                    <ul className="nav">
+                        <li className="nav-item"><a className="nav-link text-white" href='#about' onClick={handleAnchorClick}>ABOUT</a></li>
+                        <li className="nav-item"><a className="nav-link text-white" href='#experience' onClick={handleAnchorClick}>EXPERIENCE</a></li>
+                        <li className="nav-item"><a className="nav-link text-white" href='#projects' onClick={handleAnchorClick}>PROJECTS</a></li>
+                        <li className="nav-item"><a className="nav-link text-white" href='#contact' onClick={handleAnchorClick}>CONTACT</a></li>
+                    </ul>
                 </div>
             </div>
         </nav>
