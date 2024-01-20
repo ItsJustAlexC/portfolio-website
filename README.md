@@ -1,2 +1,2 @@
 # portfolio-website
-This project is a portfolio of who I am, and what I do
+A portfolio introducing me, and displaying my skills.

@@ -167,6 +167,13 @@
   opacity: .8;
 }
 
+.nav-item {
+  padding: .25rem;
+}
+.on:hover {
+  background-color: rgba(255,255,255, 0.3);
+}
+
 .transparent {
   animation: navbarBackgroundToTransparent;
   animation-iteration-count: 1;
