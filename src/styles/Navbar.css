@@ -2,19 +2,18 @@
     z-index: 1;
     width: 100%;
 }
-  
+
 .nav-link:hover {
     opacity: .8;
 }
-  
-.nav-item {
-    padding: .25rem;
+
+.nav-link {
+  padding: .75rem;
 }
-  
-.on:hover {
-    background-color: rgba(255,255,255, 0.3);
+
+.active {
+  background-color: rgba(255,255,255, 0.3);
 }
-  
 .transparent {
     animation: navbarBackgroundToTransparent;
     animation-iteration-count: 1;

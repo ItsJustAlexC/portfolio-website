@@ -1,13 +1,4 @@
-import './styles/App.css';
-import './styles/About.css';
-import './styles/Navbar.css';
-import './styles/Hero.css';
-import './styles/Footer.css';
-import './styles/Contact.css';
-import './styles/Resume.css';
-import './styles/Experience.css';
-import './styles/Projects.css';
-
+import './styles/App.css'
 
 import Hero from './components/Hero';
 import About from './components/About';

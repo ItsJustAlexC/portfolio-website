@@ -1,2 +1,2 @@
 # portfolio-website
-A portfolio introducing me, and displaying my skills.
+A portfolio introducing myself, and my work.
