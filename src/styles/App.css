@@ -1,3 +1,12 @@
+@import './About.css';
+@import './Navbar.css';
+@import './Hero.css';
+@import './Footer.css';
+@import './Contact.css';
+@import './Resume.css';
+@import './Experience.css';
+@import './Projects.css';
+
 @media (max-width: 320px) {
   .hero-h1 {
     font-size: 2.5rem;
