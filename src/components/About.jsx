@@ -23,8 +23,8 @@ const About = () => {
     }, []);
 
     return (
-        <div id='about' className="about container-fluid">
-            <div className="about-content" style={{height: viewportHeight}} ref={heroContentRef}>
+        <div id='about' className="about">
+            <div className="about-content container-fluid" style={{height: viewportHeight}} ref={heroContentRef}>
                 <h1 className="about-h1 ">About Me</h1>
                 <img className="profile" src={profileImage} alt="Alex" draggable="false"/>
                 <p className="about-p">
