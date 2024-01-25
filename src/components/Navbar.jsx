@@ -40,18 +40,21 @@ const Navbar = () => {
     }
     
     return(
-        <nav id='navbar' className={`navbar container-fluid position-fixed ${navbarBackground}`}>
-            <div className="navbar-content d-flex justify-content-between align-items-center">
-                <div className="navbar-title">
-                    <p className="navbar-brand text-white my-0 mx-5">MY PORTFOLIO</p>
+        <nav id='navbar' className={`navbar navbar-expand-md position-fixed ${navbarBackground}`}>
+            <div className="navbar-content d-flex justify-content-between align-items-center container-fluid">
+                <div className="navbar-title navbar-brand">
+                    <p className="text-white my-0 mx-5">MY PORTFOLIO</p>
                 </div>
-                <div className="navbar-links">
-                    <ul className="nav">
-                        <li className={`nav-item`}><a className="nav-link text-white" href='#about' onClick={handleAnchorClick}>ABOUT</a></li>
-                        <li className={`nav-item`}><a className="nav-link text-white" href='#experience' onClick={handleAnchorClick}>EXPERIENCE</a></li>
-                        <li className={`nav-item`}><a className="nav-link text-white" href='#resume' onClick={handleAnchorClick}>RESUME</a></li>
-                        <li className={`nav-item`}><a className="nav-link text-white" href='#projects' onClick={handleAnchorClick}>PROJECTS</a></li>
-                        <li className={`nav-item`}><a className="nav-link text-white" href='#contact' onClick={handleAnchorClick}>CONTACT</a></li>
+                <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span className="fa-solid fa-bars text-light fs-2"></span>
+                </button>
+                <div id="navbarSupportedContent" className="collapse navbar-collapse justify-content-end">
+                    <ul className="navbar-nav mx-5 d-flex justify-content-start">
+                        <li className="nav-item"><a className="nav-link text-white" href='#about' onClick={handleAnchorClick}>ABOUT</a></li>
+                        <li className="nav-item"><a className="nav-link text-white" href='#experience' onClick={handleAnchorClick}>EXPERIENCE</a></li>
+                        <li className="nav-item"><a className="nav-link text-white" href='#resume' onClick={handleAnchorClick}>RESUME</a></li>
+                        <li className="nav-item"><a className="nav-link text-white" href='#projects' onClick={handleAnchorClick}>PROJECTS</a></li>
+                        <li className="nav-item"><a className="nav-link text-white" href='#contact' onClick={handleAnchorClick}>CONTACT</a></li>
                     </ul>
                 </div>
             </div>
