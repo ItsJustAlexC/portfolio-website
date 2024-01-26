@@ -3,6 +3,7 @@ import { useEffect, useState } from "react";
 const Navbar = () => {
     const [navbarBackground, setNavbarBackground] = useState('');
     const [isTransparent, setIsTransparent] = useState(true);
+    const [navbarOpen, setNavbarOpen] = useState(false);
 
     //sets the background color of the navbar based on the scroll position
     useEffect(() => {
@@ -39,8 +40,13 @@ const Navbar = () => {
                 targetElement.scrollIntoView({behavior : 'smooth'})
             }
         }
+        if(navbarOpen) {
+            document.querySelector('.navbar-toggler').click();
+        }
+    }
 
-        document.querySelector('.navbar-toggler').click();
+    const handleMenuClick = () => {
+        setNavbarOpen(!navbarOpen);
     }
     
     return(
@@ -49,8 +55,8 @@ const Navbar = () => {
                 <div className="navbar-title navbar-brand">
                     <p className="text-white my-0 mx-3">MY PORTFOLIO</p>
                 </div>
-                <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                    <span className="fa-solid fa-bars text-light fs-2"></span>
+                <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation" onClick={handleMenuClick}>
+                    <span className="fa-solid fa-bars text-light fs-2 my-3"></span>
                 </button>
                 <div id="navbarSupportedContent" className={`navbar-links collapse navbar-collapse justify-content-end`}>
                     <ul className="navbar-nav text-end">
