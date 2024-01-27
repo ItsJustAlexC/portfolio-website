@@ -1,16 +1,21 @@
 {
   "files": {
-    "main.css": "/portfolio-website/static/css/main.5a2948e5.css",
-    "main.js": "/portfolio-website/static/js/main.01e77161.js",
+    "main.css": "/portfolio-website/static/css/main.2379c35d.css",
+    "main.js": "/portfolio-website/static/js/main.2f6db043.js",
     "static/media/background-mountain-dark.png": "/portfolio-website/static/media/background-mountain-dark.5d989e7df1ef6d3bee56.png",
     "static/media/background-desk-dark-blur.png": "/portfolio-website/static/media/background-desk-dark-blur.691a38043402318ae827.png",
     "static/media/profile.png": "/portfolio-website/static/media/profile.37cf8de2588f960b365b.png",
+    "static/media/valley-queen.png": "/portfolio-website/static/media/valley-queen.de91329fa8d1b9e1f746.png",
+    "static/media/genesis10.png": "/portfolio-website/static/media/genesis10.1d62dca6cfb71df83f6e.png",
+    "static/media/Jenkins-Dark.png": "/portfolio-website/static/media/Jenkins-Dark.56d272b4ddfdea68ca53.png",
+    "static/media/Bootstrap.png": "/portfolio-website/static/media/Bootstrap.f9dd030c53efdf57269f.png",
+    "static/media/React-Dark.png": "/portfolio-website/static/media/React-Dark.6aa251274b716548fe0d.png",
     "index.html": "/portfolio-website/index.html",
-    "main.5a2948e5.css.map": "/portfolio-website/static/css/main.5a2948e5.css.map",
-    "main.01e77161.js.map": "/portfolio-website/static/js/main.01e77161.js.map"
+    "main.2379c35d.css.map": "/portfolio-website/static/css/main.2379c35d.css.map",
+    "main.2f6db043.js.map": "/portfolio-website/static/js/main.2f6db043.js.map"
   },
   "entrypoints": [
-    "static/css/main.5a2948e5.css",
-    "static/js/main.01e77161.js"
+    "static/css/main.2379c35d.css",
+    "static/js/main.2f6db043.js"
   ]
 }
