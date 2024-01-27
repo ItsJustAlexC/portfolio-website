@@ -21,3 +21,46 @@
     text-align: center;
     padding: 0% 15% 0% 15%;
 }
+
+.experience-skills-work {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    width: 100%;
+    margin: 2rem 0rem 0rem 0rem;
+}
+
+.experience-skills, .experience-work > p {
+    font-size: 1.25rem;
+}
+
+.experience-skills-images {
+    display: grid;
+    grid-template-columns: repeat(5, auto);
+    grid-gap: .5rem;
+}
+
+.skill-image {
+    filter: grayscale(1);
+    width: 3rem;
+}
+
+.skill-image:hover {
+    filter: grayscale(0);
+    transition-duration: .5s;
+}
+
+.valley-queen {
+    width: 15rem;
+    margin: 0rem 0rem 1rem 0rem;
+}
+
+.genesis {
+    width: 15rem;
+    margin: 0rem 0rem 0rem 0rem;
+}
+
+.experience-work-images {
+    display: flex;
+    flex-direction: column;
+}
