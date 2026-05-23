@@ -7,6 +7,7 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    min-height: 90vh;
 }
   
 .contact-img {
@@ -17,7 +18,7 @@
     border: #222222;
     border-style: solid;
     padding: .7rem;
-    font-size: 1.2rem;
+    font-size: clamp(1rem, 1.5vw, 1.2rem);
 }
   
 .contact-anchor:hover{

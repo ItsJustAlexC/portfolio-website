@@ -17,11 +17,10 @@ import github from '../images/skills/Github-Dark.png';
 import jenkins from '../images/skills/Jenkins-Dark.png';
 
 const Experience = () => {
-    const viewportHeight = window.innerHeight;
 
     return (
         <div id="experience" className="experience">
-            <div className="experience-content container-fluid" style={{height: viewportHeight}}>
+            <div className="experience-content container-fluid">
                 <h1 className="experience-h1">Experience</h1>
                 <p className="experience-p">I've been a software developer for 5 years now, with 3 years of professional experience.</p>
                 <div className="experience-skills-work">
