@@ -53,7 +53,7 @@ const Navbar = () => {
         <nav id='navbar' className={`navbar navbar-expand-md position-fixed ${navbarBackground}`}>
             <div className="navbar-content d-flex justify-content-between align-items-center container-fluid">
                 <div className="navbar-title navbar-brand">
-                    <p className="text-white my-0 mx-3">MY PORTFOLIO</p>
+                    <p className="text-white my-0 mx-3">ALEX'S PORTFOLIO</p>
                 </div>
                 <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation" onClick={handleMenuClick}>
                     <span className="fa-solid fa-bars text-light fs-2 my-3"></span>

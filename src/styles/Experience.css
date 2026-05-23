@@ -7,38 +7,48 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    min-height: 70vh;
+    padding: 4rem 1rem;
 }
 
 .experience-h1 {
     font-family: 'Lato', sans-serif;
-    font-size: clamp(40px, 2vh, 40px);
+    font-size: clamp(1.8rem, 3vh, 2.5rem);
     font-weight: bolder;
-    margin: 1rem 0rem 1rem 0rem;
+    margin: 1rem 0;
 }
 
 .experience-p {
     font-family: 'Roboto Slab';
-    font-size: 1.0rem;
+    font-size: clamp(0.85rem, 1.5vw, 1rem);
     text-align: center;
-    padding: 0% 15% 0% 15%;
+    padding: 0 5%;
+    max-width: 800px;
 }
 
 .experience-skills-work {
     display: flex;
     flex-direction: row;
-    justify-content: space-evenly;
-    width: 100%;
-    margin: 2rem 0rem 0rem 0rem;
+    justify-content: center;
+    gap: 0rem;
+    margin: 2rem 0 0 0;
 }
 
 .experience-skills, .experience-work > p {
-    font-size: 1.25rem;
+    font-size: clamp(1rem, 1.5vw, 1.25rem);
     text-align: center;
+}
+
+.experience-skills, .experience-work {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .experience-skills-images {
     display: grid;
-    grid-template-columns: repeat(5, auto);
+    grid-template-columns: repeat(5, minmax(2.5rem, 3rem));
     grid-gap: 1rem;
     justify-content: center;
 }
@@ -54,13 +64,12 @@
 }
 
 .valley-queen {
-    width: 15rem;
+    width: min(15rem, 80%);
     margin: 0rem 0rem 1rem 0rem;
 }
 
 .genesis {
-    width: 15rem;
-    margin: 0rem 0rem 0rem 0rem;
+    width: min(15rem, 80%);
 }
 
 .experience-work-images {
@@ -69,77 +78,18 @@
     align-items: center;
 }
 
-@media (max-width: 426px) {
-    .experience-h1 {
-        font-family: 'Lato', sans-serif;
-        font-size: 2rem;
-        font-weight: bolder;
-        margin: 1rem 0rem 1rem 0rem;
-    }
-    
-    .experience-p {
-        font-family: 'Roboto Slab';
-        font-size: .9rem;
-        text-align: center;
-        padding: 0% 15% 0% 15%;
-    }
-    
+@media (max-width: 768px) {
     .experience-skills-work {
-        display: flex;
-        flex-direction: row;
-        justify-content: space-evenly;
-        width: 100%;
-        margin: 2rem 0rem 0rem 0rem;
-    }
-    
-    .experience-skills, .experience-work > p {
-        font-size: 1rem;
-        text-align: center;
-    }
-    
-    .experience-skills-images {
-        display: grid;
-        grid-template-columns: repeat(5, auto);
-        grid-gap: 1rem;
-        justify-content: center;
-    }
-    
-    .skill-image {
-        filter: grayscale(1);
-        width: 2.5rem;
-    }
-    
-    .skill-image:hover {
-        filter: grayscale(0);
-        transition-duration: .5s;
-    }
-    
-    .valley-queen {
-        width: 12rem;
-        margin: 0rem 0rem 1rem 0rem;
-    }
-    
-    .genesis {
-        width: 12rem;
-        margin: 0rem 0rem 0rem 0rem;
-    }
-    
-    .experience-work-images {
-        display: flex;
         flex-direction: column;
         align-items: center;
     }
-
-    .experience-skills-work {
-        display: flex;
-        flex-direction: column;
-        justify-content: space-evenly;
-        width: 100%;
-        margin: 2rem 0rem 0rem 0rem;
+    
+    .experience-skills {
+        margin: 2rem 0 0 0;
     }
-
-    .experience-work {
-        margin: 2rem 0rem 0rem 0rem;
+    
+    
+    .skill-image {
+        width: 2.5rem;
     }
-
 }

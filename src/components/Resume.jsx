@@ -1,9 +1,8 @@
 const Resume = () => {
-    const viewportHeight = window.innerHeight * .50;
-    
+
     return (
         <div id="resume" className="resume resume-bg-img">
-            <div className="resume-content container-fluid" style={{height: viewportHeight}}>
+            <div className="resume-content container-fluid">
                 <h1 className="resume-h1 text-white text-center">Check out my Resume!</h1>
                 <a className="resume-anchor text-decoration-none text-white">Grab a copy</a>
             </div>
